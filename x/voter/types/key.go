@@ -13,3 +13,14 @@ const (
 	// QuerierRoute to be used for querier msgs
 	QuerierRoute = ModuleName
 )
+
+const (
+	PollPrefix = "poll-value-"
+	PollCountPrefix = "poll-count-"
+)
+		
+const (
+	VotePrefix = "vote-value-"
+	VoteCountPrefix = "vote-count-"
+)
+		

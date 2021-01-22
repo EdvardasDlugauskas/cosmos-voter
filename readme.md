@@ -1,5 +1,8 @@
 # voter
 
+A modified version of the tutorial https://tutorials.cosmos.network/voter/. 
+I have added a mechanism to return the paid coins if the creation of a poll was failed. Previously the coins would be consumed even if the creation of a poll failed.
+
 **voter** is a blockchain application built using Cosmos SDK and Tendermint and generated with [Starport](https://github.com/tendermint/starport).
 
 ## Get started
