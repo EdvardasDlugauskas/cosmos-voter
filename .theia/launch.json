@@ -1,0 +1,18 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Connect to server",
+            "type": "go",
+            "request": "attach",
+            "mode": "remote",
+            "remotePath": "${workspaceFolder}/x/voter",
+            "port": 1317,
+            "host": "127.0.0.1",
+            "showLog": true,
+            "trace": "verbose"
+        }
+    ]
+}

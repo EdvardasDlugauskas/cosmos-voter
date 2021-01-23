@@ -16,9 +16,6 @@ func handleMsgCreatePoll(ctx sdk.Context, k keeper.Keeper, msg types.MsgCreatePo
 	}
 	moduleAcct := sdk.AccAddress(crypto.AddressHash([]byte(types.ModuleName)))
 	payment, _ := sdk.ParseCoins("200token")
-
-	k.CoinKeeper.DelegateCoins
-
 	if err := k.CoinKeeper.SendCoins(ctx, poll.Creator, moduleAcct, payment); err != nil {
 		return nil, err
 	}
